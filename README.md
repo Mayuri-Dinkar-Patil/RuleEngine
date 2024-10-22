@@ -1,22 +1,24 @@
 # Rule Engine
 
-A Java application that enables users to create and evaluate rules using a simple string format. It employs an abstract syntax tree (AST) for logical operations (AND, OR) and provides error handling for invalid rules. Comprehensive JUnit tests ensure functionality and reliability.
+## Overview
+The Rule Engine is a Java application designed to empower users to create and evaluate rules using a simple string format. It utilizes an Abstract Syntax Tree (AST) for logical operations (AND, OR) and incorporates robust error handling for invalid rules. The application includes comprehensive unit tests to ensure functionality and reliability.
 
 ## Features
-
 - **User-Friendly Rule Management**: Easily create and manage rules using a string format.
 - **Logical Operation Support**: Evaluate rules with logical operations such as AND and OR.
-- **Robust Error Handling**: Handle invalid rules gracefully with clear error messages.
+- **Robust Error Handling**: Gracefully handle invalid rules with clear error messages.
 - **Comprehensive Unit Testing**: Ensure functionality and reliability with JUnit tests.
 
-## Usage
+## Dependencies
+- **Java**: JDK 8 or higher
+- **JUnit**: JUnit 4.13.2 (for testing)
+- **Hamcrest**: hamcrest-core-1.3 (for matchers)
+- **MySQL Connector**: mysql-connector-java-8.1.0 (for database connectivity)
 
-To use the Rule Engine, you can create rules and evaluate them based on provided data. Below is an example of how to create and evaluate a rule:
+## Setup Instructions
+To get started with the Rule Engine, follow these steps:
 
-```java
-// Example usage
-ASTNode rule = RuleEngine.create_rule("age > 30");
-Map<String, Object> data = new HashMap<>();
-data.put("age", 35);
-boolean result = RuleEngine.evaluate_rule(rule, data);
-System.out.println("Rule Evaluation Result: " + result);
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Mayuri-Dinkar-Patil/RuleEngine.git
+   cd RuleEngine
